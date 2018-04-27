@@ -24,6 +24,7 @@ namespace vega
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
 
+
         }
 
         public IConfiguration Configuration { get; }
