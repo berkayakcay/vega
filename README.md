@@ -19,6 +19,9 @@ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<YourStrong!Passw0rd>" `
    -p 1401:1433 --name sql1 `
    -d microsoft/mssql-server-linux:2017-latest
    
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<YourStrong!Passw0rd>" -p 1401:
+1433 -d microsoft/mssql-server-linux:2017-latest
+   
 
 
 ## dotnet watch 
