@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using vega.Models;
 
-namespace vega.Data
+namespace vega.Persistence
 {
     public class VegaDbContext : DbContext
     {
@@ -13,11 +13,5 @@ namespace vega.Data
         public DbSet<Model> Models {get;set;}
         public DbSet<Make> Makes {get;set;}
 
-
-        // protected override void OnModelCreating(ModelBuilder modelBuilder){
-        //     modelBuilder.Entity<Model>().ToTable("Model");
-        //     modelBuilder.Entity<Make>().ToTable("Make");
-
-        // }
     }
 }
