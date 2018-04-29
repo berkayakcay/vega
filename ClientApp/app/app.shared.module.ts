@@ -5,8 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { FeatureService } from './services/feature.service';
-import { MakeService } from './services/make.service';
+import { VehicleService } from './services/vehicle.service';
 import { AppComponent } from './components/app/app.component';
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
@@ -38,8 +37,7 @@ import { VehicleFormComponent } from './components/vehicle-form/vehicle-form.com
         ])
     ],
     providers:[
-        MakeService,
-        FeatureService
+        VehicleService
     ]
 })
 export class AppModuleShared {
